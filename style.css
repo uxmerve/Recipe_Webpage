@@ -1,1 +1,194 @@
+/* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAFA;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* ===== Typography ===== */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #017C74; /* Dark turquoise */
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.hero-text {
+  margin-top: 1rem;
+}
+
+/* ===== Quick Facts ===== */
+.quick-facts {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 2.5rem;
+}
+
+ul, ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Gallery & Image Styling ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 2.5rem;
+}
+
+.img-box {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Nutrition Table ===== */
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nutrition td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.nutrition tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition td:first-child {
+  font-weight: 600;
+}
+
+/* ===== Review Form ===== */
+.review-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.review-form h2 {
+  margin-top: 0;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.review-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  outline: none;
+  border-color: #017C74;
+  box-shadow: 0 0 0 2px rgba(1, 124, 116, 0.1);
+}
+
+.review-form button {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #017C74;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #016861;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 3rem;
+}
